@@ -1,22 +1,31 @@
-Vue.component('v-select', VueSelect.VueSelect)
+// Vue.component('v-select', VueSelect.VueSelect)
 
-const Vegetable = {
-    template: `#varietyList`
-}
+// var FullCalendar = require('vue-full-calendar')
+// Vue.use(FullCalendar)
 
-const routes = [{
-    path: '/vegetable/:veggie',
-    component: Vegetable
-}]
+// const Vegetable = {
+//     template: `#varietyList`
+// }
 
-const router = new VueRouter({
-    routes // short for `routes: routes`
-})
+// const routes = [{
+//     path: '/vegetable/:veggie',
+//     component: Vegetable
+// }]
+
+// const router = new VueRouter({
+//     routes // short for `routes: routes`
+// })
 
 var vm = new Vue({
     el: '#app',
-    router: router,
+    // router: router,
     data: {
+        events: [
+            {
+                title:"plant",
+                start: '2017-12-25'
+            },
+        ],
         locationInfo: null,
         zipCode: null,
         // data for veggies
